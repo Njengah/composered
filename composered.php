@@ -14,3 +14,6 @@ new Composered\ComposeredPlugin();
 
 // Instantiate the admin class
 new Composered\Admin\Admin();
+
+// Instantiate the Public class
+new Composered\Public\Public();

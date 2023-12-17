@@ -13,7 +13,8 @@
     "autoload": {
         "psr-4": {
             "Composered\\": "inc/",
-            "Composered\\Admin\\": "inc/admin/"
+            "Composered\\Admin\\": "inc/admin/", 
+            "Composered\\Public\\": "inc/admin/"
         }
     }
 }
