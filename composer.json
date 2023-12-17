@@ -14,7 +14,7 @@
         "psr-4": {
             "Composered\\": "inc/",
             "Composered\\Admin\\": "inc/admin/", 
-            "Composered\\Public\\": "inc/admin/"
+            "Composered\\Front\\": "inc/front/"
         }
     }
 }

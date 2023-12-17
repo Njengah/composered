@@ -1,12 +1,12 @@
 <?php 
 
  /**
-  * Public  Class 
+  * Front Class 
   */
 
-  namespace Composered\Public;
+  namespace Composered\Front;
 
-  class Public {
+  class Front {
       public function __construct() {
           // Test Shortcode 
           add_shortcode('composered', [$this, 'register_shortcode']);
@@ -20,4 +20,7 @@
   
       // Add other public-related functions here
   }
+  
+
+
   
