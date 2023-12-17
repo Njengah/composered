@@ -12,7 +12,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Composered\\": "inc/"
+            "Composered\\": "inc/",
+            "Composered\\Admin\\": "inc/admin/"
         }
     }
 }
