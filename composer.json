@@ -1,0 +1,21 @@
+{
+    "name": "user/composered",
+    "description": "WordPress plugin Boilerplate with Composer Support",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Joe Njenga"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Composered\\": "src/"
+        }
+    }
+}
+
+
+

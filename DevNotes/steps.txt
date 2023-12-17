@@ -1,0 +1,49 @@
+----------------------------------------------------------------------------------------------------
+# Initialize Composer
+----------------------------------------------------------------------------------------------------
+[#1]    Inside your plugin directory, run the following command to initialize a new Composer project:
+
+        >> composer init
+
+--------
+[#2]    Follow the prompts to provide information about your plugin. For example:
+            Package Name: yourvendor/composered
+            Description: WordPress Plugin Boilerplate with Composer Support
+            Author: Your Name
+            Minimum Stability: stable
+            Package Type: wordpress-plugin
+
+--------
+[#3]    Edit the generated composer.json file to include autoloading for your plugin's classes. 
+        Add the following to the autoload section:
+    ---------------------------
+        "autoload": {
+            "psr-4": {
+                "Composered\\": "src/"
+            }
+        }
+    -------------------------------
+       Complete New  File 
+
+        {
+            "name": "user/composered",
+            "description": "WordPress plugin Boilerplate with Composer Support",
+            "type": "wordpress-plugin",
+            "license": "GPL",
+            "authors": [
+                {
+                    "name": "Joe Njenga"
+                }
+            ],
+            "minimum-stability": "stable",
+            "require": {},
+            "autoload": {
+                "psr-4": {
+                    "Composered\\": "src/"
+                }
+            }
+        }
+
+    -------------------------------
+
+
