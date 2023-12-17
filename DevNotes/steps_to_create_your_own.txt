@@ -1,6 +1,14 @@
 ----------------------------------------------------------------------------------------------------
-# Initialize Composer
+Creating Composer WordPress Plugin From Scratch 
 ----------------------------------------------------------------------------------------------------
+--------
+[Prerequisite - Plugin Folder Creation]
+---------------------------
+ > Create the plugin directory then move to that dir  
+
+--------
+# Initialize Composer
+---------------------------
 [#1]    Inside your plugin directory, run the following command to initialize a new Composer project:
 
         >> composer init
@@ -23,7 +31,7 @@
             }
         }
     -------------------------------
-       Complete New  File 
+       Completed New  File  Example 
 
         {
             "name": "user/composered",
@@ -44,6 +52,46 @@
             }
         }
 
-    -------------------------------
+--------  
+[#4] Create the Plugin Structure
+  -------------------------------
+    mkdir src (you can rename this to something else like inc)
+    touch src/ComposeredPlugin.php (create the main file in the src folder )
+    cd ../move out of the source folder 
+    touch composered.php (Create the main plugin file that will be the entry point of the plugin )
+
+    Example of the File Structure 
+
+    your-plugin-directory/
+        ├── src/
+        │   └── ComposeredPlugin.php
+        ├── vendor/
+        │   └── (Composer dependencies)
+        ├── your-plugin-name.php
+        ├── composer.json
+        ├── composer.lock
+        └── ... (other WordPress plugin files and directories)
+
+
+--------
+[#5] Implement the Classes 
+   -------------------------------
+src/ComposeredPlugin.php
+composered.php
+
+ Note** Dont forget the namespaces
+
+--------
+ Step 6: Install Dependencies
+   -------------------------------
+    composer install
+
+Note** Dont forget to add vendor folder to the gitignore
+
+--------
+ Step 7: Install Dependencies
+   -------------------------------
+Activate Your Plugin
+
 
 
